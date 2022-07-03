@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+:root{
+    --sep-color:#C55241;
+    --text-color:#E07464;
+    --main-border-color:#751102;
+    --a-color:#F59E91;
+    --bg-color:#A72F1D;
+    /*green  */
+    /* --sep-color:#87ab69;
+    --text-color:#75975e;
+    --main-border-color:#4b6043;
+    --a-color:#a3c585;
+    --bg-color:#658354; */
+
+}
+
+body{
+    text-shadow: 0 0 3px #111111;
+    font-family: 'Titillium Web', sans-serif;
+    background-color:var(--bg-color) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+}
+.head{
+    animation: ColorChange 5s infinite;
+    color: var(--text-color);
+    border: 5px dashed var(--main-border-color);
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin:0px auto 50px; /*value ha =  top - left & right - bottom*/
+}
+.description{
+    color:var(--text-color);
+    font-weight: 1000;
+    border: 5px dashed var(--main-border-color);
+    border-radius: 15px;
+    padding: 1px 6px 1px 10px;
+    margin: 3px;
+}
+.seprate , h3 , a{
+    color: var(--sep-color);
+    text-decoration: none; /* baraye a */
+}
+.image img{
+    width: 50px;
+    margin: 1px 0 0 5px;
+}
+.image img:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+
+}
+a:hover{
+    cursor: pointer;
+    color:var(--a-color);
+}
+@keyframes ColorChange {
+    0% { color: #751102;}
+    25% { color:#A72F1D}
+    50% { color:#F59E91}
+    75% { color:#A72F1D}
+    100% { color:#751102}
+}
+
